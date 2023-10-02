@@ -236,7 +236,7 @@ h3 {
 }
 
 .questions {
-  transform: translateY(-3rem);
+  transform: translateY(-5rem);
   display: flex;
 }
 
