@@ -13,7 +13,7 @@
 .questionaire {
     display: flex;
     flex-direction: column;
-    box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
+    box-shadow: $border-shadow;
     border: $border;
     border-radius: $border-radius;
     text-align: center;

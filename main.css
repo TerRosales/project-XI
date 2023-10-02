@@ -27,7 +27,7 @@
 
 .menu {
   box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
-  border: 0.22rem solid rgba(2, 2, 255, 0.76);
+  border: 0.22rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
   text-align: center;
   align-items: center;
@@ -43,34 +43,34 @@
 }
 
 .play-btn {
-  border: 0.2rem solid rgba(2, 2, 255, 0.36);
+  border: 0.2rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
   width: 9rem;
   height: 3.2rem;
-  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  background-image: rgba(255, 230, 230, 0.69);
   font-family: inherit;
   text-transform: uppercase;
 }
 
 .play-btn:hover {
-  border: 0.22rem solid rgba(2, 2, 255, 0.36);
+  border: 0.22rem solid rgba(2, 2, 25, 0.86);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
   width: 9.18rem;
   height: 3.38rem;
-  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  background-image: rgba(255, 230, 230, 0.69);
   font-family: inherit;
 }
 
 .play-btn:active {
   color: rgba(255, 1, 1, 0.88);
-  border: 0.24rem solid rgba(2, 2, 255, 0.46);
+  border: 0.24rem solid rgba(2, 2, 25, 0.99);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
   width: 8.98rem;
   height: 3.08rem;
-  background-image: linear-gradient(rgba(10, 10, 255, 0.55), rgba(40, 60, 255, 0.55), rgba(255, 10, 10, 0.55));
+  background-image: linear-gradient(rgba(255, 200, 200, 0.6), rgba(230, 200, 230, 0.6), rgba(200, 200, 255, 0.6));
   font-family: inherit;
 }
 
@@ -97,7 +97,7 @@ h3 {
 }
 
 .newUserInput {
-  border: 0.2rem solid rgba(2, 2, 255, 0.36);
+  border: 0.2rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
   outline: none;
   margin-top: 1.2rem;
@@ -120,12 +120,12 @@ h3 {
 }
 
 .btn-tag {
-  border: 0.2rem solid rgba(2, 2, 255, 0.36);
+  border: 0.2rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
   width: 9rem;
   height: 3.2rem;
-  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  background-image: rgba(255, 230, 230, 0.69);
   font-family: inherit;
   text-transform: uppercase;
 }
@@ -137,34 +137,34 @@ h3 {
 }
 
 .btn-tag:hover {
-  border: 0.22rem solid rgba(2, 2, 255, 0.36);
+  border: 0.22rem solid rgba(2, 2, 25, 0.86);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
   width: 9.18rem;
   height: 3.38rem;
-  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  background-image: rgba(255, 230, 230, 0.69);
   font-family: inherit;
 }
 
 .btn-tag:active {
   color: rgba(255, 10, 10, 0.58);
-  border: 0.24rem solid rgba(2, 2, 255, 0.46);
+  border: 0.24rem solid rgba(2, 2, 25, 0.99);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
   width: 8.98rem;
   height: 3.08rem;
-  background-image: linear-gradient(rgba(10, 10, 255, 0.55), rgba(40, 60, 255, 0.55), rgba(255, 10, 10, 0.55));
+  background-image: linear-gradient(rgba(255, 200, 200, 0.6), rgba(230, 200, 230, 0.6), rgba(200, 200, 255, 0.6));
   font-family: inherit;
 }
 
 .text-field {
-  border: 0.2rem solid rgba(2, 2, 255, 0.36);
+  border: 0.2rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
   outline: none;
   margin-top: 1.2rem;
   width: 12rem;
   height: 4rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(70, 60, 255, 0.85);
   background-color: rgba(102, 102, 255, 0.52);
   font-size: 2.5rem;
   font-stretch: expanded;
@@ -174,10 +174,10 @@ h3 {
 }
 
 .text-field:focus {
-  border: 0.1rem inset rgba(30, 30, 255, 0.85);
+  border: 0.32rem inset rgba(30, 30, 30, 0.85);
   height: 4.5rem;
-  color: rgba(255, 200, 255, 0.95);
-  background-color: rgba(52, 52, 255, 0.65);
+  color: rgba(255, 100, 100, 0.95);
+  background-color: rgba(22, 12, 122, 0.65);
 }
 
 .math-page {
@@ -191,7 +191,7 @@ h3 {
   display: flex;
   flex-direction: column;
   box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
-  border: 0.22rem solid rgba(2, 2, 255, 0.76);
+  border: 0.22rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
   text-align: center;
   align-items: center;
@@ -248,8 +248,9 @@ p {
 .rules {
   margin-top: 17.5%;
   margin-right: 3.5rem;
-  border: 0.22rem solid rgba(2, 2, 255, 0.76);
+  border: 0.22rem solid rgba(2, 2, 2, 0.66);
   border-radius: 2.5rem;
+  box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
   background-image: linear-gradient(rgba(40, 60, 255, 0.65), rgba(40, 60, 255, 0.45), rgba(50, 80, 255, 0.25));
   width: 45rem;
   height: 40rem;
@@ -285,7 +286,7 @@ html, body {
 }
 
 body {
-  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  background-image: rgba(255, 230, 230, 0.69);
   background-repeat: cover;
 }
 
