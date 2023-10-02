@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 html, body {
     margin: 0;
     padding: 0;

@@ -4,8 +4,14 @@
 .main {
     padding: 1.5rem;
 }
+
+.id-entry {
+    z-index: -1;
+    color: rgba(255, 50, 50, 1);
+}
+
 .user-tag {
-    transform: translateY(-2.5rem);
+    transform: translate(-2.3rem, -3.1rem);
     text-align: end;
     position: relative;
     font-size: 1.75rem;

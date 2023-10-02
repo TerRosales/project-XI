@@ -1,4 +1,7 @@
 @use '../partials/variables' as *;
+.icon-x {
+    position: relative;
+}
 
 .menu {
     box-shadow: $border-shadow;
@@ -10,10 +13,11 @@
     display: flex;
     flex-direction: column;
     background-image: $linear-two;
-    margin: 8.8rem 6.2rem;
-    margin-left: 10%;
+    margin-left: 60%;
+    margin-top: 5.5rem;
     padding: 0 0.4rem;
-    width: 25rem; height: 27rem;
+    width: 32rem; height: 27rem;
+    
 }
 
 .play-btn {
@@ -30,16 +34,17 @@
 .play-btn:hover {
     border: 0.22rem solid rgba(2, 2, 25, 0.86);
     border-radius: $border-radius;
+    color: rgba(255, 10, 10, 0.78);
     margin-top: 1.2rem;
     width: 9.18rem;
-    height: 3.38rem;
+    height: 3.48rem;
     background-image: $linear-one;
     font-family: inherit;
 }
 
 .play-btn:active{
     color: rgba(255, 1, 1, 0.88);
-    border: 0.24rem solid rgba(2, 2, 25, 0.99);
+    border: 0.24rem solid rgba(2, 2, 25, 0.79);
     border-radius: $border-radius;
     margin-top: 1.2rem;
     width: 8.98rem;
@@ -76,11 +81,11 @@ h3 {
     border-radius: $border-radius;
     outline: none;
     margin-top: 1.2rem;
-    width: 12rem;
-    height: 2.2rem;
-    color: rgba(255, 2, 2, 0.95);
-    background-color: rgba(1, 1, 230, .70);
-    font-size: 1.8rem;
+    width: 16rem;
+    height: 3.35rem;
+    color: rgba(70, 60, 255, 0.85);
+    background-color: rgba(102, 102, 255, 0.52);
+    font-size: 2.8rem;
     font-stretch: expanded;
     font-weight: 700;
     text-transform: uppercase;
@@ -89,9 +94,9 @@ h3 {
 
 .newUserInput:focus{
     border: 0.1rem inset rgba(30, 30, 255, .85);
-    height: 2.5rem;
-    color: rgba(255, 150, 150, 0.95);
-    background-color: rgba(52, 52, 255, 0.85);
+    height: 3.50rem;
+    color: rgba(255, 100, 100, 0.95);
+    background-color: rgba(22, 12, 122, .65);
 }
 
 .btn-tag {
@@ -112,18 +117,19 @@ h3 {
 }
 
 .btn-tag:hover {
-    border: 0.22rem solid rgba(2, 2, 25, 0.86);
+    border: 0.22rem solid rgba(2, 2, 25, 0.80);
+    color: rgba(255, 10, 10, 0.78);
     border-radius: $border-radius;
     margin-top: 1.2rem;
     width: 9.18rem;
-    height: 3.38rem;
+    height: 3.48rem;
     background-image: $linear-one;
     font-family: inherit;
 }
 
 .btn-tag:active {
     color: rgba(255, 10, 10, 0.58);
-    border: 0.24rem solid rgba(2, 2, 25, 0.99);
+    border: 0.24rem solid rgba(2, 2, 25, 0.79);
     border-radius: $border-radius;
     margin-top: 1.2rem;
     width: 8.98rem;
@@ -153,6 +159,25 @@ h3 {
     height: 4.5rem;
     color: rgba(255, 100, 100, 0.95);
     background-color: rgba(22, 12, 122, .65);
+}
+
+.close-btn {
+    background-color: rgba(255, 10, 10, 0.38);;
+    transform: translate(18.5rem, -1.7rem);
+    width: 3.95rem; height: 3.6rem;
+    border-radius: 1.3rem;
+}
+
+.close-btn:hover {
+    transform: translate(18.5rem, -1.7rem);
+    width: 3.99rem; height: 3.65rem;
+    border-radius: 1.3rem;
+}
+
+.close-btn:active {
+    transform: translate(18.5rem, -1.7rem);
+    width: 3.89rem; height: 3.55rem;
+    border-radius: 1.3rem;
 }
 
 

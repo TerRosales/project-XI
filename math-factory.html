@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
+    <script defer src=".js/main.js"></script>
     <title>Math Me Up</title>
 </head>
 <body>
     <main id="main" class="main">
             <h5 class="user-tag" id="user-tag">
-                UsernamePlaceholder
+                User: <span class="id-entry" id="id-entry">TJR123</span>
             </h5>
         <div class="goMode sub questionaire">
             <div class="questions">
@@ -22,8 +24,15 @@
                 <p class="secondNumber" id="secondsNumber">00</p>
             </div>
             <div class="answer-div">
-                <label class="labels" for="answer">Enter your Answer: </label><br>
-                    <input class="text-field" name="answer" type="text" max="3" min="1" required><br>
+                <label class="labels" for="answer">
+                    Enter your Answer: 
+                </label><br>
+                    <input class="text-field" 
+                            name="answer" 
+                            type="text" 
+                            maxlength="3" 
+                            minlength="2" 
+                            required><br>
                         <button class="btn-tag submit-answer">
                                 Submit Answer
                         </button>
@@ -35,12 +44,13 @@
             </div>
         </div>
             <section class="section-rules">
-                <div class="rules sub show sub-index">
-                    <h2 class="rules-title hidden">Rules &#129302;</h2>
-                    <p class="rules-set hidden">Answer as many questions as you can. &#128073;</p>
-                    <p class="rules-set hidden">You Have <span>10</span> lives to survive this battle. &#128073;</p>
-                    <p class="rules-set hidden">Hit Play! &#128073;</p>
-                    <p class="rules-set hidden"><a href="./">Link</a></p>
+                <div class="rules sub show sub-index hidden">
+                    <button class="btn-tag close-btn"><i class="fa-solid fa-x fa-l icon-x"></i></button>
+                    <h2 class="rules-title">Rules &#129302;</h2>
+                    <p class="rules-set">Answer as many questions as you can. &#128073;</p>
+                    <p class="rules-set">You Have <span>10</span> lives to survive this battle. &#128073;</p>
+                    <p class="rules-set">Hit Play! &#128073;</p>
+                    <p class="rules-set"><a href="./">Link</a></p>
                 </div>
             </section>
         </div>
