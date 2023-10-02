@@ -1,0 +1,9 @@
+@use '../partials/variables' as *;
+
+.main-page, .sub {
+    border: $border;
+    border-radius: $border-radius;
+    background-image: $bg;
+    width: 70%; height: 38rem;
+    margin: 3rem 15%;
+}

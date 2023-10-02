@@ -1,0 +1,22 @@
+@use '../partials/variables' as *;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    // overflow-y: hidden;
+    background-image: $linear-one;
+    background-repeat: repeat;
+}
+
+.sub-math {
+    transform: translateY(30rem);
+}
