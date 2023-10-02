@@ -1,9 +1,5 @@
 @use '../partials/variables' as *;
 
-.main-main {
-    display: grid;
-}
-
 .menu {
     box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
     border: $border;
@@ -13,12 +9,14 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.80));
+    background-image: $linear-two;
     margin: 8.8rem 6.2rem;
+    margin-left: 10%;
+    padding: 0 0.4rem;
     width: 25rem; height: 27rem;
 }
 
-.play-button {
+.play-btn {
     border: $border-btn;
     border-radius: $border-radius;
     margin-top: 1.2rem;
@@ -29,7 +27,7 @@
     text-transform: uppercase;
 }
 
-.play-button:hover {
+.play-btn:hover {
     border: 0.22rem solid rgba(2, 2, 255, 0.36);
     border-radius: $border-radius;
     margin-top: 1.2rem;
@@ -39,8 +37,8 @@
     font-family: inherit;
 }
 
-.play-button:active {
-    color: rgba(0, 0 , 0, 0.9);
+.play-btn:active{
+    color: rgba(255, 1, 1, 0.88);
     border: 0.24rem solid rgba(2, 2, 255, 0.46);
     border-radius: $border-radius;
     margin-top: 1.2rem;
@@ -55,12 +53,18 @@
     font-weight: 700;
     font-stretch: expanded;
     font-size: 4.1rem;
-    color: rgba(0, 0, 130, 0.92);
+    color: rgba(0, 0, 140, 0.85);
     transform: translateY(-15px);
 }
 
-.id-label, h3 {
+.id-label{
+    color: $font-color;
     font-size: 1.54rem;
+}
+
+.btn-text {
+    color: $font-color;
+    font-size: 1.60rem;
 }
 
 h3 {
@@ -74,8 +78,8 @@ h3 {
     margin-top: 1.2rem;
     width: 12rem;
     height: 2.2rem;
-    color: rgba(255, 255, 255, 0.75);
-    background-color: rgba(102, 102, 255, 0.52);
+    color: rgba(255, 2, 2, 0.95);
+    background-color: rgba(1, 1, 230, .70);
     font-size: 1.8rem;
     font-stretch: expanded;
     font-weight: 700;
@@ -86,17 +90,69 @@ h3 {
 .newUserInput:focus{
     border: 0.1rem inset rgba(30, 30, 255, .85);
     height: 2.5rem;
+    color: rgba(255, 150, 150, 0.95);
+    background-color: rgba(52, 52, 255, 0.85);
+}
+
+.btn-tag {
+    border: $border-btn;
+    border-radius: $border-radius;
+    margin-top: 1.2rem;
+    width: 9rem;
+    height: 3.2rem;
+    background-image: $linear-one;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.submit-answer {
+    font-size: 1.2rem;
+    font-stretch: expanded;
+    font-weight: 700;
+}
+
+.btn-tag:hover {
+    border: 0.22rem solid rgba(2, 2, 255, 0.36);
+    border-radius: $border-radius;
+    margin-top: 1.2rem;
+    width: 9.18rem;
+    height: 3.38rem;
+    background-image: $linear-one;
+    font-family: inherit;
+}
+
+.btn-tag:active {
+    color: rgba(255, 10, 10, 0.58);
+    border: 0.24rem solid rgba(2, 2, 255, 0.46);
+    border-radius: $border-radius;
+    margin-top: 1.2rem;
+    width: 8.98rem;
+    height: 3.08rem;
+    background-image: linear-gradient( rgba(10, 10, 255, 0.55),rgba(40, 60, 255, 0.55), rgba(255, 10, 10, 0.55));
+    font-family: inherit;
+}
+
+.text-field{
+    border: $border-btn;
+    border-radius: $border-radius;
+    outline: none;
+    margin-top: 1.2rem;
+    width: 12rem;
+    height: 4rem;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(102, 102, 255, 0.52);
+    font-size: 2.5rem;
+    font-stretch: expanded;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.text-field:focus{
+    border: 0.1rem inset rgba(30, 30, 255, .85);
+    height: 4.5rem;
     color: rgba(255, 200, 255, 0.95);
     background-color: rgba(52, 52, 255, .65);
 }
 
 
-
-.rules {
-    text-align: center;
-    padding-top: $top-margin;
-}
-
-.rules-set {
-    font-size: 5rem;
-}

@@ -1,0 +1,47 @@
+@use '../partials/variables' as *;
+
+
+.math-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "menu rules"
+    "menu rules";
+}
+
+.questionaire {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
+    border: $border;
+    border-radius: $border-radius;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+    transform: translateY(-9rem);
+    background-image: $linear-two;
+    height: 82vh;
+}
+
+.questions {
+    transform: translateY(-3rem);
+    display: flex;
+}
+
+.calc-sign {
+    width: 15rem; height: 22rem;
+    margin-right: 3.9rem;
+    margin-left: 3.9rem;
+    transition: all 0.5 ease-in-out;
+    color: $font-color;
+    animation: rotate-scale-up;
+    animation-duration: 400ms;
+}
+
+.firstNumber, .secondNumber {
+    font-size: 7rem;
+    font-weight: 700;
+    color: rgba(255, 10, 10, 0.58);
+}

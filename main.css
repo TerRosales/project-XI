@@ -1,14 +1,28 @@
-.main-page, .sub {
-  border: 0.22rem solid rgba(2, 2, 255, 0.76);
-  border-radius: 2.5rem;
-  background-image: linear-gradient(rgba(40, 60, 255, 0.65), rgba(40, 60, 255, 0.45), rgba(50, 80, 255, 0.25));
-  width: 70%;
-  height: 45rem;
-  margin: 10% 15%;
+.main {
+  padding: 1.5rem;
+}
+
+.user-tag {
+  transform: translateY(-2.5rem);
+  text-align: end;
+  position: relative;
+  font-size: 1.75rem;
+  color: rgba(5, 5, 5, 0.95);
 }
 
 .main-main {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "menu rules" "menu rules";
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.rules {
+  grid-area: rules;
 }
 
 .menu {
@@ -22,11 +36,13 @@
   flex-direction: column;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
   margin: 8.8rem 6.2rem;
+  margin-left: 10%;
+  padding: 0 0.4rem;
   width: 25rem;
   height: 27rem;
 }
 
-.play-button {
+.play-btn {
   border: 0.2rem solid rgba(2, 2, 255, 0.36);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
@@ -37,7 +53,7 @@
   text-transform: uppercase;
 }
 
-.play-button:hover {
+.play-btn:hover {
   border: 0.22rem solid rgba(2, 2, 255, 0.36);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
@@ -47,8 +63,8 @@
   font-family: inherit;
 }
 
-.play-button:active {
-  color: rgba(0, 0, 0, 0.9);
+.play-btn:active {
+  color: rgba(255, 1, 1, 0.88);
   border: 0.24rem solid rgba(2, 2, 255, 0.46);
   border-radius: 2.5rem;
   margin-top: 1.2rem;
@@ -62,12 +78,18 @@
   font-weight: 700;
   font-stretch: expanded;
   font-size: 4.1rem;
-  color: rgba(0, 0, 130, 0.92);
+  color: rgba(0, 0, 140, 0.85);
   transform: translateY(-15px);
 }
 
-.id-label, h3 {
+.id-label {
+  color: rgba(0, 0, 100, 0.72);
   font-size: 1.54rem;
+}
+
+.btn-text {
+  color: rgba(0, 0, 100, 0.72);
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -81,8 +103,8 @@ h3 {
   margin-top: 1.2rem;
   width: 12rem;
   height: 2.2rem;
-  color: rgba(255, 255, 255, 0.75);
-  background-color: rgba(102, 102, 255, 0.52);
+  color: rgba(255, 2, 2, 0.95);
+  background-color: rgba(1, 1, 230, 0.7);
   font-size: 1.8rem;
   font-stretch: expanded;
   font-weight: 700;
@@ -93,17 +115,162 @@ h3 {
 .newUserInput:focus {
   border: 0.1rem inset rgba(30, 30, 255, 0.85);
   height: 2.5rem;
+  color: rgba(255, 150, 150, 0.95);
+  background-color: rgba(52, 52, 255, 0.85);
+}
+
+.btn-tag {
+  border: 0.2rem solid rgba(2, 2, 255, 0.36);
+  border-radius: 2.5rem;
+  margin-top: 1.2rem;
+  width: 9rem;
+  height: 3.2rem;
+  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.submit-answer {
+  font-size: 1.2rem;
+  font-stretch: expanded;
+  font-weight: 700;
+}
+
+.btn-tag:hover {
+  border: 0.22rem solid rgba(2, 2, 255, 0.36);
+  border-radius: 2.5rem;
+  margin-top: 1.2rem;
+  width: 9.18rem;
+  height: 3.38rem;
+  background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
+  font-family: inherit;
+}
+
+.btn-tag:active {
+  color: rgba(255, 10, 10, 0.58);
+  border: 0.24rem solid rgba(2, 2, 255, 0.46);
+  border-radius: 2.5rem;
+  margin-top: 1.2rem;
+  width: 8.98rem;
+  height: 3.08rem;
+  background-image: linear-gradient(rgba(10, 10, 255, 0.55), rgba(40, 60, 255, 0.55), rgba(255, 10, 10, 0.55));
+  font-family: inherit;
+}
+
+.text-field {
+  border: 0.2rem solid rgba(2, 2, 255, 0.36);
+  border-radius: 2.5rem;
+  outline: none;
+  margin-top: 1.2rem;
+  width: 12rem;
+  height: 4rem;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(102, 102, 255, 0.52);
+  font-size: 2.5rem;
+  font-stretch: expanded;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Pixelify Sans", cursive;
+}
+
+.text-field:focus {
+  border: 0.1rem inset rgba(30, 30, 255, 0.85);
+  height: 4.5rem;
   color: rgba(255, 200, 255, 0.95);
   background-color: rgba(52, 52, 255, 0.65);
 }
 
-.rules {
+.math-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "menu rules" "menu rules";
+}
+
+.questionaire {
+  display: flex;
+  flex-direction: column;
+  box-shadow: -15px 15px 10px rgba(0, 0, 255, 0.18);
+  border: 0.22rem solid rgba(2, 2, 255, 0.76);
+  border-radius: 2.5rem;
   text-align: center;
-  padding-top: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9%;
+  transform: translateY(-9rem);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  height: 82vh;
+}
+
+.questions {
+  transform: translateY(-3rem);
+  display: flex;
+}
+
+.calc-sign {
+  width: 15rem;
+  height: 22rem;
+  margin-right: 3.9rem;
+  margin-left: 3.9rem;
+  transition: all 0.5 ease-in-out;
+  color: rgba(0, 0, 100, 0.72);
+  animation: rotate-scale-up;
+  animation-duration: 400ms;
+}
+
+.firstNumber, .secondNumber {
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(255, 10, 10, 0.58);
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(255, 3, 3, 0.98);
+}
+
+span {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgba(255, 3, 3, 0.98);
+}
+
+p {
+  color: rgba(0, 0, 100, 0.72);
+  font-weight: 500;
+}
+
+.rules > p {
+  text-align: left;
+}
+
+.rules {
+  margin-top: 17.5%;
+  margin-right: 3.5rem;
+  border: 0.22rem solid rgba(2, 2, 255, 0.76);
+  border-radius: 2.5rem;
+  background-image: linear-gradient(rgba(40, 60, 255, 0.65), rgba(40, 60, 255, 0.45), rgba(50, 80, 255, 0.25));
+  width: 45rem;
+  height: 40rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  text-align: center;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+}
+
+.labels {
+  color: rgba(0, 0, 100, 0.72);
+  font-size: 1.79rem;
+  font-weight: 700;
 }
 
 .rules-set {
-  font-size: 5rem;
+  font-size: 2rem;
+}
+
+.rules-title {
+  font-size: 3.5rem;
 }
 
 *, *::before, *::after {
@@ -119,13 +286,40 @@ html, body {
 
 body {
   background-image: linear-gradient(rgba(10, 10, 255, 0.3), rgba(40, 60, 255, 0.3), rgba(255, 10, 10, 0.3));
-  background-repeat: round;
+  background-repeat: cover;
 }
 
 .sub-math {
   transform: translateY(30rem);
 }
 
+button {
+  font-size: 2rem;
+  color: rgba(0, 0, 100, 0.72);
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-10-2 0:22:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation rotate-scale-up
+ * ----------------------------------------
+ */
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 body {
   font-family: "Pixelify Sans", cursive;
   text-transform: uppercase;

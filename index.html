@@ -18,19 +18,29 @@
         <div class="container main-page main-main">
             <div class="menu" id="menu">
                 <h2 class="main-title">Math Me Up!</h2>
-                <label class="id-label" for="newUser">Enter New ID: </label>
-                <input class="newUserInput" id="newUser" type="text" name="newUser"
-                min="5"
-                max="10"
-                required>
-                <button class="play-button" type="button"><h3>Play</h3></button>
+                <div class="menu-div">
+                    <label class="id-label labels" for="newUser">Enter New ID: </label>
+                            <input class="newUserInput" 
+                                    id="newUser" 
+                                    type="text" 
+                                    name="newUser"
+                                    min="5"
+                                    max="10"
+                                    required><br>
+                            <button class="play-btn" type="button">
+                                    Play
+                            </button>
+                </div>
             </div>
-            <div class="rules sub hidden sub-math">
-                <h2 class="rules-title hidden">Rules</h2>
-                <p class="rules-set hidden">Hit Play!</p>
-                <p class="rules-set hidden">Answer as many questions as you can</p>
-                <p class="rules-set hidden">You Have 10 lives to survive this battle.</p>
-            </div>
+            <section class="section-rules">
+                <div class="rules sub show sub-index">
+                    <h2 class="rules-title hidden">Rules &#129302;</h2>
+                    <p class="rules-set hidden"> &#128073; Answer as many questions as you can.</p>
+                    <p class="rules-set hidden"> &#128073; You Have <span>10</span> lives to survive this battle.</p>
+                    <p class="rules-set hidden">&#128073; Hit Play!</p>
+                    <p class="rules-set hidden"><a href="./math-factory.html">Link</a></p>
+                </div>
+            </section>
         </div>
     </main>
 </body>

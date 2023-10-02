@@ -1,9 +1,30 @@
 @use '../partials/variables' as *;
+// Index page
+// Grid setup
+.main {
+    padding: 1.5rem;
+}
+.user-tag {
+    transform: translateY(-2.5rem);
+    text-align: end;
+    position: relative;
+    font-size: 1.75rem;
+    color: rgba(5, 5, 5, 0.95);
+}
 
-.main-page, .sub {
-    border: $border;
-    border-radius: $border-radius;
-    background-image: $bg;
-    width: 70%; height: 45rem;
-    margin: 10% 15%;
+.main-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "menu rules"
+    "menu rules";
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.rules {
+    grid-area: rules;
 }

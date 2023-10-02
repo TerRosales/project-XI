@@ -1,0 +1,51 @@
+@use '../partials/variables' as *;
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 3, 3, 0.98);
+}
+
+span {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: rgba(255, 3, 3, 0.98);
+}
+
+p {
+    color: $font-color;
+    font-weight: 500;
+}
+
+.rules > p {
+    text-align: left;
+}
+
+.rules {
+    margin-top: 17.5%;
+    margin-right: 3.5rem;
+    border: $border;
+    border-radius: $border-radius;
+    background-image: $bg;
+    width: 45rem; height: 40rem;
+    background-image: $linear-two;
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+}
+
+.labels {
+    color: $font-color;
+    font-size: 1.79rem;
+    font-weight: 700;
+}   
+
+.rules-set {
+    font-size: 2rem;
+}
+
+.rules-title {
+        font-size: 3.5rem;
+}
+
+
