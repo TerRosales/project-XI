@@ -40,15 +40,16 @@
 }
 
 .questions {
-    transform: translateY(-5rem);
+    transform: translateY(-2rem);
     display: flex;
 }
 
 .calc-sign {
-    width: 15rem; height: 22rem;
+    transform: translateY(6.5rem);
+    width: 15rem; height: 10rem;
     margin-right: 3.9rem;
     margin-left: 3.9rem;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.8 ease-in-out;
     color: $font-color;
     animation: rotate-scale-up;
     animation-duration: 400ms;

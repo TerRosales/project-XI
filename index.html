@@ -11,31 +11,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
-    <script defer src=".js/main.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
     <title>Math Me up</title>
 </head>
 <body>
     <main id="main" class="main">
         <div class="container main-page main-main">
-            <div class="menu move-left" id="menu">
+            <div class="menu" id="menu">
                 <h2 class="main-title">Math Me Up!</h2>
                 <div class="menu-div">
-                    <label class="id-label labels" for="newUser">Enter New ID: </label>
+                    <label class="id-label labels newUserLabel" for="newUserInput">Enter New ID: </label>
                     <br>
                             <input class="newUserInput" 
-                                    id="newUser" 
+                                    id="newUserInput" 
                                     type="text" 
-                                    name="newUser"
+                                    name="newUserInput"
                                     minlength="3"
                                     maxlength="9"
                                     required><br>
-                            <button class="play-btn" type="button">       START
+                            <button class="play-btn" type="button">
+                                START
                             </button>
                 </div>
             </div>
+            <div class="info">
+                <ul class="info-list">
+                    <li class="list-item">
+                        <a href="https://github.com/TerRosales">
+                            <i class="fa-brands fa-github-alt fa-2xl github-icon"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">Email: <span class="github-span">rtin27411@gmail.com</span></li>
+                </ul>
+            </div>
             <section class="section-rules">
                 <div class="rules sub show sub-index hidden">
-                    <button class="btn-tag close-btn"><i class="fa-solid fa-x fa-l icon-x"></i></button>
+                    <button class="btn-tag close-btn">
+                        <i class="fa-solid fa-x fa-l icon-x"></i>
+                    </button>
                     <h2 class="rules-title">Rules &#129302;</h2>
                     <p class="rules-set"> &#128073; Answer as many questions as you can.</p>
                     <p class="rules-set"> &#128073; You Have <span>10</span> lives to survive this battle.</p>
