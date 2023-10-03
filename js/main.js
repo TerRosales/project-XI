@@ -28,8 +28,12 @@ playButton.addEventListener("click",  () => {
 
         validationAlert.textContent = '';
 
+        usernameEntryField.style.border = '0.20rem solid rgba(2, 2, 2, 0.90)'
+
     } else {
         validationAlert.innerHTML = 'MAXIMUM 8 CHARACTERS <br> MINIMUM 4 CHARACTERS <br> ENTER ATLEAST 1 NUMBER';
+
+        usernameEntryField.style.border = '0.2rem solid red'
     }
 
 })
