@@ -18,6 +18,13 @@
     "menu rules";
 }
 
+.main-main {
+    animation: bounce-top;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 1.2s;
+}
+
 .menu {
     grid-area: menu;
 }
