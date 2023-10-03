@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
-    <script defer type="module" src="./js/main.js"></script>
     <title>Math Me up</title>
 </head>
 <body>
@@ -28,8 +27,9 @@
                                     name="newUserInput"
                                     minlength="3"
                                     maxlength="9"
-                                    required><br>
-                            <button class="play-btn" type="button">
+                                    required>
+                            <div class="alert-message" id="alert-message"></div><br>
+                            <button class="play-btn" id="play-btn" type="button">
                                 START
                             </button>
                 </div>
@@ -45,18 +45,20 @@
                 </ul>
             </div>
             <section class="section-rules">
-                <div class="rules sub show sub-index hidden">
-                    <button class="btn-tag close-btn">
+                <div id="menu-rules" class="rules sub sub-index hidden">
+                    <button class="btn-tag close-btn" id="close-btn">
                         <i class="fa-solid fa-x fa-l icon-x"></i>
                     </button>
                     <h2 class="rules-title">Rules &#129302;</h2>
                     <p class="rules-set"> &#128073; Answer as many questions as you can.</p>
                     <p class="rules-set"> &#128073; You Have <span>10</span> lives to survive this battle.</p>
                     <p class="rules-set">&#128073; Hit Play!</p>
-                    <p class="rules-set hidden"><a href="./math-factory.html">Link</a></p>
+                    <p class="rules-set"><a href="./math-factory.html">Link</a></p>
                 </div>
             </section>
         </div>
     </main>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

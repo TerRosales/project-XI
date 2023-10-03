@@ -9,13 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
-    <script defer src=".js/main.js"></script>
     <title>Math Me Up</title>
 </head>
 <body>
     <main id="main" class="main">
             <h5 class="user-tag" id="user-tag">
-                User: <span class="id-entry" id="id-entry">TJR123</span>
+                User: <span class="id-entry" id="id-entry"></span>
             </h5>
         <div class="goMode sub questionaire">
             <div class="questions">
@@ -37,15 +36,15 @@
                                 Submit Answer
                         </button>
             <div class="rules-btn">
-                <button class="btn-tag">
+                <button class="btn-tag rules-btn" id="rules-btn">
                         Rules
                 </button>
             </div>
             </div>
         </div>
             <section class="section-rules">
-                <div class="rules sub show sub-index hidden">
-                    <button class="btn-tag close-btn"><i class="fa-solid fa-x fa-l icon-x"></i></button>
+                <div class="rules sub menu-rules hiddenRules" id="menu-rules">
+                    <button class="btn-tag close-btn" id="close-btn"><i class="fa-solid fa-x fa-l icon-x"></i></button>
                     <h2 class="rules-title">Rules &#129302;</h2>
                     <p class="rules-set">Answer as many questions as you can. &#128073;</p>
                     <p class="rules-set">You Have <span>10</span> lives to survive this battle. &#128073;</p>
@@ -55,5 +54,6 @@
             </section>
         </div>
     </main>
+    <script src="./js/game.js"></script>
 </body>
 </html>

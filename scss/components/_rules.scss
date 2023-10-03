@@ -2,13 +2,26 @@
 
 
 // Button Click Animation
+.showGameRules {
+    transform: translate(34rem, -55rem);
+    background-color: rgba(140, 10, 255, 1);
+    opacity: 1;
+}
+// 
+.hiddenRules {
+    opacity: 0;
+}
 
 .move-left {
     transform: translateX(-20rem);
 }
 
 .hidden {
-    display: none;
+    transform: translateY(-100rem);
+}
+
+.show {
+    transform: translateY(0);
 }
 
 h2 {
@@ -33,6 +46,10 @@ p {
     position: relative;
 }
 
+#menu-rules {
+    transition: all 0.8s ease-in-out;
+}
+
 .rules > p {
     text-align: left;
 }
@@ -43,13 +60,12 @@ p {
     border: $border;
     border-radius: $border-radius;
     box-shadow: $border-shadow;
-    background-image: $bg;
+    background-image: rgba(140, 10, 255, 1);
     width: 45rem; height: 40rem;
     background-image: $linear-two;
     text-align: center;
     padding-top: 1rem;
     padding-left: 1.5rem;
-    transition: all 0.5s ease-in-out;
 }
 
 .labels {

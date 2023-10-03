@@ -1,8 +1,12 @@
 @use '../partials/variables' as *;
 // Index page
+
 // Grid setup
 .main {
     padding: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .main-main {
