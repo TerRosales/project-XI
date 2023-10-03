@@ -29,7 +29,7 @@ playButton.addEventListener("click",  () => {
         validationAlert.textContent = '';
 
     } else {
-        validationAlert.textContent = 'Please make sure you have 8 characters with atleast 1 of them number';
+        validationAlert.innerHTML = 'MAXIMUM 8 CHARACTERS <br> MINIMUM 4 CHARACTERS <br> ENTER ATLEAST 1 NUMBER';
     }
 
 })
