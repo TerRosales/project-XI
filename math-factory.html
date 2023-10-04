@@ -16,6 +16,9 @@
             <h5 class="user-tag" id="user-tag">
                 User: <span class="id-entry" id="id-entry"></span>
             </h5>
+            <h5 class="life-indicator" id="life-indicator">
+                Lives: <span class="life-count" id="life-counter"></span>
+            </h5>
         <div class="goMode sub questionaire">
             <div class="questions">
                 <p class="firstNumber" id="firstNumber">00</p>
@@ -26,7 +29,7 @@
                 <p class="operator" id="operator"></p>
             </div>
             <div class="resultDisplay" id="resultDisplay">
-                <p class="result" id="result">Start</p>
+                <p class="result" id="result">Start Game</p>
             </div>
             <div class="answer-div">
                 <label class="labels" for="answer">
@@ -51,12 +54,12 @@
         </div>
             <section class="section-rules">
                 <div class="rules sub menu-rules hiddenRules" id="menu-rules">
-                    <button class="btn-tag close-btn" id="close-btn"><i class="fa-solid fa-x fa-l icon-x"></i></button>
+                    <a href="./math-factory.html"><button class="btn-tag close-btn" id="close-btn"><i class="fa-solid fa-x fa-l icon-x"></i></button></a>
                     <h2 class="rules-title">Rules &#129302;</h2>
-                    <p class="rules-set">Answer as many questions as you can. &#128073;</p>
-                    <p class="rules-set">You Have <span>10</span> lives to survive this battle. &#128073;</p>
-                    <p class="rules-set">Hit Play! &#128073;</p>
-                    <p class="rules-set"><a href="./">Link</a></p>
+                    <p class="rules-set"> &#128073; Answer as many questions as you can.</p>
+                    <p class="rules-set"> &#128073; You Have <span class="life-count" id="life-count">5</span> lives to survive this battle.</p>
+                    <p class="rules-set"> &#128073; Hit Play!</p>
+                    <p class="rules-set"><a href="./math-factory.html"><button class="btn-tag play retry" id="retry" type="button">Play</button></a></p>
                 </div>
             </section>
         </div>

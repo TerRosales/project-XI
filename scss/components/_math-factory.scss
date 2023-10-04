@@ -10,6 +10,22 @@
     "menu rules";
 }
 
+.life-indicator {
+    transform: translate(-2.3rem, -3.1rem);
+    text-align: end;
+    position: relative;
+    font-size: 1.75rem;
+    color: rgba(5, 5, 5, 0.95);
+    margin: 0;
+}
+
+.life-count {
+    font-size: 2.5rem;
+    color: rgba(255, 50, 50, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
 .id-entry {
     z-index: -1;
     font-size: 2.5rem;
@@ -22,6 +38,8 @@
     position: relative;
     font-size: 1.75rem;
     color: rgba(5, 5, 5, 0.95);
+    margin: 0;
+    margin-top: 2rem;
 }
 
 .questionaire {
@@ -77,10 +95,20 @@
     p {
         margin: 0;
     }
+    transition: all 0.1s ease-in-out;
+    animation: pulsate-fwd;
+    animation-iteration-count: infinite;
+    animation-duration: 0.90s;
+}
+
+.result:hover {
+    animation: pulsate-fwd;
+    animation-iteration-count: 1;
+    animation-duration: 0.90s;
 }
 
 .correctAnswer{
-    color: rgba(0, 190, 0, 0.9);
+    color: rgba(9, 90, 9, 0.9);
 }
 
 .wrongAnswer {

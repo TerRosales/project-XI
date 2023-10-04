@@ -10,8 +10,18 @@ const idEntry = document.getElementById('id-entry');
 const rulesShow = document.getElementById('rules-btn');
 const rulesDialogBox = document.getElementById('menu-rules');
 const operatorSign = document.getElementById('operator');
+const lifeCount = document.getElementById('life-counter');
+const retryButton = document.getElementById('retry');
 
-let attemptsRemaining = 3;
+
+
+let attemptsRemaining = 5;
+
+
+lifeCount.innerHTML = attemptsRemaining;
+
+
+
 
 if (storedData) {
     idEntry.textContent = storedData;
@@ -53,7 +63,6 @@ resultElement.addEventListener("click", () => {
 
     submitAnswer.addEventListener('click' , () => {
         const userAnswer = parseInt(answerInput.value, 10);
-    
         if (!isNaN(userAnswer)) {
             if (userAnswer === correctAnswer) {
                 resultElement.textContent = "Thats Correct!"
@@ -62,33 +71,42 @@ resultElement.addEventListener("click", () => {
                     resultElement.classList.remove('correctAnswer');
                     resultElement.textContent = "Next Question";
                 }, 2000);
-                attemptsRemaining = 2;
                 correctAnswer = generateMath();
                 answerInput.value = '';
             } else if (attemptsRemaining > 0) {
-                resultElement.textContent = `Try Again! ${attemptsRemaining - 1} ${attemptsRemaining - 1 === 1 ? 'try' : 'tries'} left. `;
                 resultElement.classList.add('wrongAnswer');
-
+                resultElement.textContent = `Correct Answer is`;
+                    setTimeout(function() {
+                        resultElement.textContent = correctAnswer;
+                        setTimeout(function() {
+                            resultElement.textContent = `Try Again`;
+                            correctAnswer = generateMath();
+                            resultElement.classList.remove('wrongAnswer');
+                        }, 1000)
+                    }, 900)
                 attemptsRemaining--;
+                lifeCount.innerHTML = attemptsRemaining;
+                
             } else {
-                resultElement.textContent = "Game Over, Play Again"
-                rulesDialogBox.classList.add('showGameRules');
+                if (attemptsRemaining >= 0) {
+                    resultElement.innerHTML = "<p><span>Game Over</span>, Try Again<p>"
 
-                rulesDialogBox.classList.remove('hiddenRules');
-                correctAnswer = generateMath();
-                answerInput.value = '';
-                attemptsRemaining = 3;
+                    setTimeout(function() {
+                        retryButton.textContent = 'Retry';
+                        firstNumber.textContent = ' ';
+                        secondNumber.textContent = ' ';
+                        operatorSign.textContent= ' ';
+                        setInterval(function() {
+                            rulesDialogBox.classList.add('showGameRules');
+                            rulesDialogBox.classList.remove('hiddenRules');
+                        },1300)
+                    }, 1200)
+        
+                    correctAnswer = generateMath();
+                    answerInput.value = '';
+                    attemptsRemaining = 5;
+                }
             }
-        }
-
-        if (attemptsRemaining === 0) {
-            resultElement.textContent = "Game Over, Play Again"
-            rulesDialogBox.classList.add('showGameRules');
-
-            rulesDialogBox.classList.remove('hiddenRules');
-            correctAnswer = generateMath();
-            answerInput.value = '';
-            attemptsRemaining = 3;
         }
     })
 });
