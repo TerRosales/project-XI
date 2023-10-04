@@ -43,6 +43,7 @@
   position: absolute;
   top: 90%;
   left: 37%;
+  transition: all 0.8s ease-in-out;
 }
 
 .github-icon {
@@ -82,6 +83,7 @@
   background-image: rgba(255, 230, 230, 0.69);
   font-family: inherit;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .play-btn:hover {
@@ -110,17 +112,17 @@
   font-weight: 700;
   font-stretch: expanded;
   font-size: 4.1rem;
-  color: rgba(0, 0, 140, 0.85);
+  color: rgba(100, 2, 250, 0.99);
   transform: translateY(-15px);
 }
 
 .id-label {
-  color: rgba(0, 0, 100, 0.72);
+  color: rgba(100, 2, 250, 0.99);
   font-size: 1.54rem;
 }
 
 .btn-text {
-  color: rgba(0, 0, 100, 0.72);
+  color: rgba(100, 2, 250, 0.99);
   font-size: 1.6rem;
 }
 
@@ -160,6 +162,7 @@ h3 {
   background-image: rgba(255, 230, 230, 0.69);
   font-family: inherit;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .submit-answer {
@@ -214,11 +217,12 @@ h3 {
 }
 
 .close-btn {
-  background-color: rgba(255, 150, 150, 0.58);
+  background-color: rgba(255, 15, 15, 0.38);
   transform: translate(18.5rem, -1.7rem);
   width: 3.95rem;
   height: 3.6rem;
   border-radius: 1.3rem;
+  cursor: pointer;
 }
 
 .close-btn:hover {
@@ -267,35 +271,67 @@ h3 {
   justify-content: center;
   transform: translateY(-12rem);
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
-  height: 42.8rem;
+  height: 48.8rem;
   margin-top: 10rem;
 }
 
 .questions {
-  transform: translateY(-2rem);
+  transform: translateY(-4rem);
   display: flex;
 }
 
 .calc-sign {
   transform: translateY(6.5rem);
   width: 15rem;
-  height: 10rem;
+  height: 12rem;
   margin-right: 3.9rem;
   margin-left: 3.9rem;
   transition: all 0.8 ease-in-out;
-  color: rgba(0, 0, 100, 0.72);
+  color: rgba(100, 2, 250, 0.99);
+  animation: rotate-scale-up;
+  animation-duration: 400ms;
+  cursor: pointer;
+}
+
+.animate-sign {
   animation: rotate-scale-up;
   animation-duration: 400ms;
 }
 
 .firstNumber, .secondNumber {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  z-index: 1;
   font-size: 7rem;
   font-weight: 700;
+  margin: 0;
+  margin-top: 8rem;
+  color: rgba(100, 2, 250, 0.99);
+}
+
+.resultDisplay {
+  cursor: pointer;
+  font-size: 5.4rem;
+}
+.resultDisplay p {
+  margin: 0;
+}
+
+.correctAnswer {
+  color: rgba(0, 190, 0, 0.9);
+}
+
+.wrongAnswer {
   color: rgba(250, 2, 2, 0.99);
 }
 
+.operator {
+  color: rgba(250, 2, 2, 0.99);
+  font-size: 3rem;
+  margin: 0;
+}
+
 .showGameRules {
-  transform: translate(34rem, -55rem);
+  transform: translate(35rem, -55rem);
   background-color: rgb(140, 10, 255);
   opacity: 1;
 }
@@ -320,17 +356,17 @@ h2 {
   margin: 0;
   font-size: 4rem;
   font-weight: 700;
-  color: rgba(255, 3, 3, 0.98);
+  color: rgba(250, 3, 3, 0.58);
 }
 
 span {
   font-size: 4.5rem;
   font-weight: 700;
-  color: rgba(255, 3, 3, 0.98);
+  color: rgba(250, 3, 3, 0.58);
 }
 
 p {
-  color: rgba(0, 0, 100, 0.72);
+  color: rgba(100, 2, 250, 0.99);
   font-weight: 500;
 }
 
@@ -362,7 +398,7 @@ p {
 }
 
 .labels {
-  color: rgba(0, 0, 100, 0.72);
+  color: rgba(100, 2, 250, 0.99);
   font-size: 1.79rem;
   font-weight: 700;
 }
@@ -387,13 +423,14 @@ html, body {
 }
 
 body {
+  overflow-y: hidden;
   background-image: rgba(255, 230, 230, 0.69);
   background-repeat: cover;
 }
 
 button {
   font-size: 2rem;
-  color: rgba(0, 0, 100, 0.72);
+  color: rgba(100, 2, 250, 0.99);
 }
 
 /* ----------------------------------------------

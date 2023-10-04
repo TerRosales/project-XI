@@ -19,20 +19,27 @@
         <div class="goMode sub questionaire">
             <div class="questions">
                 <p class="firstNumber" id="firstNumber">00</p>
-                    <img class="calc-sign spin-animation-tag" src="./assets/calc-icon.svg" alt="calculator operation icons">
-                <p class="secondNumber" id="secondsNumber">00</p>
+                    <img class="calc-sign" id="calc-sign" src="./assets/calc-icon.svg" alt="calculator operation icons">
+                <p class="secondNumber" id="secondNumber">00</p>
+            </div>
+            <div class="operator-sign" id="operator-sign">
+                <p class="operator" id="operator"></p>
+            </div>
+            <div class="resultDisplay" id="resultDisplay">
+                <p class="result" id="result">Start</p>
             </div>
             <div class="answer-div">
                 <label class="labels" for="answer">
                     Enter your Answer: 
                 </label><br>
-                    <input class="text-field" 
+                    <input class="text-field"
+                            id="answerInput"
                             name="answer" 
-                            type="text" 
+                            type="number"
                             maxlength="3" 
                             minlength="2" 
                             required><br>
-                        <button class="btn-tag submit-answer">
+                        <button class="btn-tag submit-answer" id="submit-answer">
                                 Submit Answer
                         </button>
             <div class="rules-btn">

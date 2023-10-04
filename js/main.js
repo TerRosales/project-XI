@@ -24,6 +24,8 @@ playButton.addEventListener("click",  () => {
 
         menuDiv.classList.add('move-left');
 
+        infoList.classList.add('move-left');
+
         playButton.disabled = true;
 
         validationAlert.textContent = '';

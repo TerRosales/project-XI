@@ -35,28 +35,60 @@
     justify-content: center;
     transform: translateY(-12rem);
     background-image: $linear-two;
-    height: 42.80rem;
+    height: 48.80rem;
     margin-top: 10rem;
 }
 
 .questions {
-    transform: translateY(-2rem);
+    transform: translateY(-4rem);
     display: flex;
 }
 
 .calc-sign {
     transform: translateY(6.5rem);
-    width: 15rem; height: 10rem;
+    width: 15rem; height: 12rem;
     margin-right: 3.9rem;
     margin-left: 3.9rem;
     transition: all 0.8 ease-in-out;
     color: $font-color;
     animation: rotate-scale-up;
     animation-duration: 400ms;
+    cursor: pointer;
+}
+
+.animate-sign {
+    animation: rotate-scale-up;
+    animation-duration: 400ms;
 }
 
 .firstNumber, .secondNumber {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 1;
     font-size: 7rem;
     font-weight: 700;
+    margin: 0;
+    margin-top: 8rem;
+    color: rgba(100, 2, 250, 0.99);
+}
+
+.resultDisplay {
+    cursor: pointer;
+    font-size: 5.4rem;
+    p {
+        margin: 0;
+    }
+}
+
+.correctAnswer{
+    color: rgba(0, 190, 0, 0.9);
+}
+
+.wrongAnswer {
+    color:rgba(250, 2, 2, 0.99)
+}
+
+.operator {
     color: rgba(250, 2, 2, 0.99);
+    font-size: 3rem;
+    margin: 0;
 }
