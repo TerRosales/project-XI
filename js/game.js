@@ -12,6 +12,16 @@ const rulesDialogBox = document.getElementById('menu-rules');
 const operatorSign = document.getElementById('operator');
 const lifeCount = document.getElementById('life-counter');
 const retryButton = document.getElementById('retry');
+const answerDiv = document.getElementById('answer-div');
+const starter = document.getElementById('result');
+
+
+answerDiv.style.display= 'none';
+
+starter.addEventListener('click',() => {
+    answerDiv.style.display = 'block';
+});
+
 
 
 
