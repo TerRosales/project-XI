@@ -84,6 +84,7 @@ resultElement.addEventListener("click", () => {
                 correctAnswer = generateMath();
                 answerInput.value = '';
             } else if (attemptsRemaining > 0) {
+                answerInput.value = '';
                 resultElement.classList.add('wrongAnswer');
                 resultElement.textContent = `Correct Answer is`;
                     setTimeout(function() {
