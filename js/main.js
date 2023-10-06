@@ -9,7 +9,7 @@ const validationAlert = document.getElementById('alert-message');
 
 playButton.addEventListener("click",  () => {
     const inputValue = usernameEntryField.value;
-    const isValid = /^[A-Za-z]*[0-9]+[A-Za-z]*$/.test(inputValue) && inputValue.length >= 6;
+    const isValid = /^[A-Za-z]*[0-9]+[A-Za-z]*$/.test(inputValue) && inputValue.length >= 4;
 
     if (isValid) {
         playButton.disabled = true;

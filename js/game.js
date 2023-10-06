@@ -96,7 +96,7 @@ resultElement.addEventListener("click", () => {
                     }, 900)
                 attemptsRemaining--;
                 lifeCount.innerHTML = attemptsRemaining;
-                
+                answerInput.value = '';
             } else {
                 if (attemptsRemaining >= 0) {
                     resultElement.innerHTML = "<p><span>Game Over</span>, Try Again<p>"
